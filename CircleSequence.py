@@ -19,3 +19,15 @@ class CircleSequence:
         self.index += 1
         self.number_returned += 1
         return return_value
+
+
+def circle_generator(iterable, number_to_return):
+    index = 0
+    number_returned = 0
+    while number_returned < number_to_return:
+        if index >= len(iterable):
+            index = 0
+        return_value = iterable[index]
+        index += 1
+        number_returned += 1
+        yield return_value

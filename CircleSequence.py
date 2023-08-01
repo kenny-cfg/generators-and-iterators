@@ -17,3 +17,6 @@ class CircleSequence:
 
     def __init__(self, iterable, number):
         pass
+
+    def __next__(self):
+        pass

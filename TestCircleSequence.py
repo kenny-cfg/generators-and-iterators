@@ -8,4 +8,4 @@ class TestCircleSequence(TestCase):
         sequence = CircleSequence('xyz', 5)
 
         result = list(sequence)
-        
+

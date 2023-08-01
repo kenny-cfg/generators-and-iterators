@@ -1,8 +1,8 @@
 class CircleSequence:
 
-    def __init__(self, iterable, number):
+    def __init__(self, iterable, number_to_return):
         self.iterable = iterable
-        self.number = number
+        self.number_to_return = number_to_return
         pass
 
     def __iter__(self):
@@ -11,7 +11,7 @@ class CircleSequence:
         return self
 
     def __next__(self):
-        if self.number_returned >= self.number:
+        if self.number_returned >= self.number_to_return:
             raise StopIteration('The end')
         if self.index >= len(self.iterable):
             self.index = 0

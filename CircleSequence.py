@@ -11,3 +11,9 @@ print(list(c))        # prints x, y, z, x, y
 c2 = CircleSequence([1,2], 5)
 print(list(c2))        # prints 1,2,1,2,1
 """
+
+
+class CircleSequence:
+
+    def __init__(self, iterable, number):
+        pass

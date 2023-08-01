@@ -9,3 +9,6 @@ class TestCircleSequence(TestCase):
 
         result = list(sequence)
 
+        self.assertEquals(result, ['x', 'y', 'z', 'x', 'y'])
+
+
